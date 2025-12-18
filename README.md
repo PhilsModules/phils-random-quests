@@ -54,29 +54,21 @@ Erstelle komplexe Quest-Prompts aus 7 Kategorien:
 *   **Logik:** Wählst du den Fantasy-Auftraggeber, wird der realistische automatisch abgewählt.
 
 ### 3. 📝 Anpassbar
-*   Die Listen sind einfache Textdateien (`.md`) im Modulordner.
-*   Bearbeite sie nach deinen Wünschen und klicke im Fenster einfach auf "Listen aktualisieren" – fertig!
+*   Das Modul erstellt **Journal-Einträge** im Ordner "Phil's Random Quests".
+*   Du kannst diese Journale einfach direkt in Foundry bearbeiten, um deine eigenen Quests einzufügen.
 
 ---
 
-
 ## 📦 Installation
-
-1.  Foundry VTT öffnen -> **Add-on Module**.
-2.  **Modul Installieren** klicken.
-3.  Manifest-URL einfügen:
-    ```
-    https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json
-    ```
-4.  **Installieren** klicken.
-
-
+1.  In Foundry VTT auf **Add-on Modules** -> **Install Module**.
+2.  Manifest URL eingeben: `https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json`
+3.  Installieren & Aktivieren.
 
 ## 📖 Erste Schritte
 1.  Das Modul erstellt automatisch ein Makro **"Phil's Random Quests"**.
 2.  Klicke darauf, um den Generator zu öffnen.
-3.  Klicke auf die Würfel-Icons, um einzelne Teile neu zu würfeln, oder unten auf "Alles neu würfeln".
-4.  Poste das Ergebnis in den Chat!
+3.  Der Button **"Listen aktualisieren"** (Sync-Icon) lädt die Standard-Inhalte neu (und überschreibt Änderungen).
+4.  Viel Spaß beim Würfeln!
 
 ---
 
@@ -101,8 +93,8 @@ Create complex quest prompts from 7 categories:
 *   **Logic:** Selecting the Fantasy Giver automatically deselects the Realistic one.
 
 ### 3. 📝 Customizable
-*   The lists are simple text files (`.md`) in the module folder.
-*   Edit them to your liking and simply hit "Update Lists" in the window header – done!
+*   The module creates **Journal Entries** in the folder "Phil's Random Quests".
+*   Simply edit these journals directly within Foundry to add your own quest ideas.
 
 ## 📚 Included Content
 *   **700+ Unique Entries:** 100 hand-written entries per category for maximum variety.
@@ -120,6 +112,4 @@ Create complex quest prompts from 7 categories:
     </a>
     <p>Made with ❤️ for the Foundry VTT Community</p>
 </div>
-
-
 
