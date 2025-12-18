@@ -17,18 +17,21 @@
 <br>
 *A simple module for instant adventure ideas.*
 
+
+
+<br>
+
+<img src="https://github.com/PhilsModules/phils-random-quests/blob/main/cover.png" alt="Preview" width="400">
+
 </div>
+
+<br>
 
 > [!TIP]
 > ### 💡 Support
 > Dieses Modul ist kostenlos und Open Source. Wenn es dir gefällt, freue ich mich über Feedback!
 
-<div align="center">
-<br>
-<!-- Placeholder for Cover Image -->
-<!-- <img src="https://github.com/PhilsModules/phils-random-quests/blob/main/cover.png" alt="Preview" width="800"> -->
-</div>
-<br>
+
 
 # <img src="https://flagcdn.com/48x36/de.png" width="28" height="21" alt="DE"> Deutsche Beschreibung
 
@@ -117,5 +120,6 @@ Create complex quest prompts from 7 categories:
     </a>
     <p>Made with ❤️ for the Foundry VTT Community</p>
 </div>
+
 
 
