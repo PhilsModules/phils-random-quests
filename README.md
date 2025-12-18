@@ -31,11 +31,28 @@
 > ### 💡 Support
 > Dieses Modul ist kostenlos und Open Source. Wenn es dir gefällt, freue ich mich über Feedback!
 
-
+<div align="center">
 
 # <img src="https://flagcdn.com/48x36/de.png" width="28" height="21" alt="DE"> Deutsche Beschreibung
 
 **Phil's Random Quests** generiert per Klick komplette Abenteuer-Aufhänger. Egal ob du improvisieren musst oder Inspiration suchst – dieses Modul liefert dir sofort Auftraggeber, Ziel, Grund, Ort und Zeitlimit.
+
+</div>
+
+## 📊 Inhalts-Statistik
+
+Mit über **1.800 einzigartigen Texteinträgen** kann das Modul **Billiarden** von einzigartigen Quest-Kombinationen generieren!
+
+| Kategorie | Einträge |
+| :--- | :---: |
+| **Auftraggeber** | 300+ |
+| **Aufgaben** | 300+ |
+| **Gründe** | 300+ |
+| **Orte** | 300+ |
+| **Fristen (Deadlines)** | 300+ |
+| **Vorfälle (Incidents)** | 300+ |
+
+---
 
 ## ✨ Hauptfunktionen
 
@@ -52,6 +69,7 @@ Erstelle komplexe Quest-Prompts aus 7 Kategorien:
 *   **Clean Design:** Übersichtliches 3-Spalten-Layout.
 *   **Kontrolle:** Per Checkbox wählen, welche Teile im Chat gepostet werden.
 *   **Logik:** Wählst du den Fantasy-Auftraggeber, wird der realistische automatisch abgewählt.
+*   **Auto-Lokalisierung:** Wenn dein Foundry auf **Deutsch** gestellt ist, lädt das Modul automatisch die deutschen Listen!
 
 ### 3. 📝 Anpassbar
 *   Das Modul erstellt **Journal-Einträge** im Ordner "Phil's Random Quests".
@@ -70,14 +88,30 @@ Erstelle komplexe Quest-Prompts aus 7 Kategorien:
 3.  Der Button **"Listen aktualisieren"** (Sync-Icon) lädt die Standard-Inhalte neu (und überschreibt Änderungen).
 4.  Viel Spaß beim Würfeln!
 
-## 📚 Enthaltene Inhalte
-*   **700+ Einzigartige Einträge:** 100 handgeschriebene Einträge pro Kategorie für maximale Abwechslung.
-
 ---
+
+<div align="center">
 
 # <img src="https://flagcdn.com/48x36/gb.png" width="28" height="21" alt="EN"> English Description
 
 **Phil's Random Quests** generates complete adventure hooks with a single click. Whether you need to improvise on the spot or are just looking for inspiration – this module provides you with a Giver, Task, Reason, Location, Incident, and Deadline instantly.
+
+</div>
+
+## 📊 Content Statistics
+
+With over **1,800 unique text entries**, the module can generate **over 1 Quadrillion** unique quest combinations!
+
+| Category | Entities |
+| :--- | :---: |
+| **Quest Givers** | 300+ |
+| **Tasks** | 300+ |
+| **Reasons** | 300+ |
+| **Locations** | 300+ |
+| **Deadlines** | 300+ |
+| **Incidents** | 300+ |
+
+---
 
 ## ✨ Key Features
 
@@ -94,13 +128,13 @@ Create complex quest prompts from 7 categories:
 *   **Clean Design:** Clear 3-column layout based on modern standards.
 *   **Control:** Use checkboxes to select exactly which parts to post to chat.
 *   **Logic:** Selecting the Fantasy Giver automatically deselects the Realistic one.
+*   **Auto-Localization:** Automatically loads German quest lists if your system language is set to German!
 
 ### 3. 📝 Customizable
 *   The module creates **Journal Entries** in the folder "Phil's Random Quests".
 *   Simply edit these journals directly within Foundry to add your own quest ideas.
 
-## 📚 Included Content
-*   **700+ Unique Entries:** 100 hand-written entries per category for maximum variety.
+---
 
 ## ⚖️ License
 **Phil's Random Quests** is licensed under the [GPL-3.0 License](LICENSE).
@@ -115,5 +149,6 @@ Create complex quest prompts from 7 categories:
     </a>
     <p>Made with ❤️ for the Foundry VTT Community</p>
 </div>
+
 
 

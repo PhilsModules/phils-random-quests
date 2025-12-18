@@ -125,9 +125,10 @@ export class RandomQuestAPI {
             });
         }
 
+        const suffix = (game.i18n.lang === "de") ? "_De.md" : ".md";
         const files = [
-            "Quest_Giver.md", "Quest_Fantasy_Giver.md", "Quest_Task.md", "Quest_Reason.md",
-            "Quest_Incident.md", "Quest_Location.md", "Quest_Deadline.md"
+            `Quest_Giver${suffix}`, `Quest_Fantasy_Giver${suffix}`, `Quest_Task${suffix}`, `Quest_Reason${suffix}`,
+            `Quest_Incident${suffix}`, `Quest_Location${suffix}`, `Quest_Deadline${suffix}`
         ];
 
         for (const file of files) {
@@ -136,8 +137,8 @@ export class RandomQuestAPI {
                 if (!response.ok) continue;
                 const text = await response.text();
 
-                // Name: "Quest_Giver.md" -> "Quest Giver"
-                const name = file.replace(".md", "").replace("_", " ");
+                // Name: "Quest_Giver.md" or "Quest_Giver_De.md" -> "Quest Giver"
+                const name = file.replace(suffix, "").replace(".md", "").replace("_", " ");
                 const cleanText = this.cleanExampleText(text);
 
                 // Check for existing
