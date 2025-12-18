@@ -26,7 +26,7 @@
 <div align="center">
 <br>
 <!-- Placeholder for Cover Image -->
-<!-- <img src="cover.png" alt="Preview" width="800"> -->
+<!-- <img src="https://github.com/PhilsModules/phils-random-quests/blob/main/cover.png" alt="Preview" width="800"> -->
 </div>
 <br>
 
@@ -117,4 +117,5 @@ Create complex quest prompts from 7 categories:
     </a>
     <p>Made with ❤️ for the Foundry VTT Community</p>
 </div>
+
 
