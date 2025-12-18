@@ -100,12 +100,72 @@ export class RandomQuestAPI {
         let content = `<div class="phils-random-names-card">
             <h3>${game.i18n.localize("PRQ.Chat.Title")}</h3><hr>`;
 
+        // Map items by source for easy access
+        const map = {};
+        items.forEach(i => map[i.source] = i.text);
+
         for (const item of items) {
             content += `<div style="margin-bottom: 8px;">
                 <strong style="display:block; font-size: 0.8em; opacity: 0.6; text-transform:uppercase;">${item.label}:</strong>
                 <span style="font-size: 1.1em;">${item.text}</span>
             </div>`;
         }
+
+        // --- Summary Generation ---
+        const giver = map["Quest_Giver"] || map["Quest_Fantasy_Giver"];
+        const task = map["Quest_Task"];
+        const reason = map["Quest_Reason"];
+        const location = map["Quest_Location"];
+        const incident = map["Quest_Incident"];
+        const deadline = map["Quest_Deadline"];
+
+        if (giver || task) {
+            content += `<hr><div style="margin-top: 10px; font-style: italic; background: rgba(0,0,0,0.1); padding: 5px; border-radius: 4px;">`;
+
+            if (game.i18n.lang === "de") {
+                // German Construction
+                let sentence = "";
+                if (giver) sentence += `<strong>${giver}</strong> möchte, dass ihr Folgendes tut: `;
+                else sentence += `Jemand möchte, dass ihr Folgendes tut: `;
+
+                if (task) sentence += `${task}`;
+                if (reason) sentence += `, ${reason}`;
+                if (location) sentence += ` ${location}`;
+                sentence += ".";
+
+                if (incident) {
+                    sentence += "<br><strong>Hintergrund:</strong> " + incident + ". ";
+                }
+
+                if (deadline) {
+                    sentence += "<br><strong>Zeitlimit:</strong> Ihr habt Zeit " + deadline + ".";
+                }
+
+                content += sentence;
+            } else {
+                // English Construction
+                let sentence = "";
+                if (giver) sentence += `<strong>${giver}</strong> wants you to `;
+                else sentence += `Someone wants you to `;
+
+                if (task) sentence += `${task}`;
+                if (reason) sentence += ` ${reason}`;
+                if (location) sentence += ` ${location}`;
+                sentence += ".";
+
+                if (incident) {
+                    sentence += " <br><strong>Context:</strong> " + incident + ". ";
+                }
+
+                if (deadline) {
+                    sentence += " <br><strong>Deadline:</strong> You have time " + deadline + ".";
+                }
+
+                content += sentence;
+            }
+            content += `</div>`;
+        }
+
         content += `</div>`;
 
         ChatMessage.create({
