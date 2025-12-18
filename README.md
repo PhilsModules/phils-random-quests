@@ -70,6 +70,9 @@ Erstelle komplexe Quest-Prompts aus 7 Kategorien:
 3.  Der Button **"Listen aktualisieren"** (Sync-Icon) lädt die Standard-Inhalte neu (und überschreibt Änderungen).
 4.  Viel Spaß beim Würfeln!
 
+## 📚 Enthaltene Inhalte
+*   **700+ Einzigartige Einträge:** 100 handgeschriebene Einträge pro Kategorie für maximale Abwechslung.
+
 ---
 
 # <img src="https://flagcdn.com/48x36/gb.png" width="28" height="21" alt="EN"> English Description
@@ -112,4 +115,5 @@ Create complex quest prompts from 7 categories:
     </a>
     <p>Made with ❤️ for the Foundry VTT Community</p>
 </div>
+
 
