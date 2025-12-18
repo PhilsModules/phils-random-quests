@@ -48,8 +48,14 @@ export class QuestGeneratorApp extends HandlebarsApplicationMixin(ApplicationV2)
     _onCheckboxChange(event) {
         const target = event.target;
         const itemEl = target.closest(".rq-preview-item");
+        const index = itemEl.dataset.index;
         const source = itemEl.dataset.source;
         const isChecked = target.checked;
+
+        // Persist the change to the data model
+        if (this.questItems[index]) {
+            this.questItems[index].isSelected = isChecked;
+        }
 
         if (!isChecked) return; // We only care if something gets CHECKED
 
@@ -62,6 +68,11 @@ export class QuestGeneratorApp extends HandlebarsApplicationMixin(ApplicationV2)
             const otherEl = this.element.querySelector(`.rq-preview-item[data-source="${otherSource}"] .rq-include-checkbox`);
             if (otherEl) {
                 otherEl.checked = false;
+                // Update the data model for the other item too
+                const otherIndex = otherEl.closest(".rq-preview-item").dataset.index;
+                if (this.questItems[otherIndex]) {
+                    this.questItems[otherIndex].isSelected = false;
+                }
             }
         }
     }
