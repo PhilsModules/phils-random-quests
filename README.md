@@ -2,10 +2,14 @@
 
 # Phil's Random Quests
 
+![Foundry v13 Compatible](https://img.shields.io/badge/Foundry-v13-brightgreen)
 ![Foundry v12 Compatible](https://img.shields.io/badge/Foundry-v12-green)
-![System](https://img.shields.io/badge/System-Agnostic-blue)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/PhilsModules/phils-random-quests/releases)
+![Version](https://img.shields.io/badge/Version-1.1.0-orange)
+
+
+<a href="Updates.md"><img src="https://img.shields.io/badge/CHECK-Changelog-blue" style="height: 25px;"></a>
+<a href="https://www.patreon.com/PhilsModules"><img src="https://img.shields.io/badge/SUPPORT-Patreon-ff424d?logo=patreon" style="height: 25px;"></a>
 
 <br>
 
@@ -52,10 +56,18 @@ Erstelle komplexe Quest-Prompts aus 7 Kategorien:
 
 ---
 
+
 ## 📦 Installation
-1.  In Foundry VTT auf **Add-on Modules** -> **Install Module**.
-2.  Manifest URL eingeben: `https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json`
-3.  Installieren & Aktivieren.
+
+1.  Foundry VTT öffnen -> **Add-on Module**.
+2.  **Modul Installieren** klicken.
+3.  Manifest-URL einfügen:
+    ```
+    https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json
+    ```
+4.  **Installieren** klicken.
+
+
 
 ## 📖 Erste Schritte
 1.  Das Modul erstellt automatisch ein Makro **"Phil's Random Quests"**.
@@ -94,3 +106,15 @@ Create complex quest prompts from 7 categories:
 
 ## ⚖️ License
 **Phil's Random Quests** is licensed under the [GPL-3.0 License](LICENSE).
+
+---
+<div align="center">
+    <h2>❤️ Support the Development</h2>
+    <p>If you enjoy this module and want to support open-source development for Foundry VTT, check out my Patreon!</p>
+    <p>Gefällt dir das Modul? Unterstütze die Weiterentwicklung auf Patreon!</p>
+    <a href="https://www.patreon.com/PhilsModules">
+        <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron" />
+    </a>
+    <p>Made with ❤️ for the Foundry VTT Community</p>
+</div>
+
