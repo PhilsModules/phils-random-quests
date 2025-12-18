@@ -1,0 +1,28 @@
+<div class="phils-random-quests-window">
+
+    <div class="rq-preview-list">
+        {{#each items}}
+        <div class="rq-preview-item" data-index="{{@index}}" data-source="{{this.source}}">
+            <div class="rq-col-label">{{this.label}}</div>
+            <div class="rq-col-text">{{{this.text}}}</div>
+            <div class="rq-col-actions">
+                <input type="checkbox" class="rq-include-checkbox" {{#if this.isSelected}}checked{{/if}}>
+                <button type="button" class="rq-reroll" data-action="reroll" title="{{localize 'PRQ.App.RerollOne'}}">
+                    <i class="fas fa-sync"></i>
+                </button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <hr>
+
+    <div class="rq-controls">
+        <button type="button" data-action="generate">
+            <i class="fas fa-dice-d20"></i> {{localize "PRQ.App.RerollAll"}}
+        </button>
+        <button type="button" data-action="post">
+            <i class="fas fa-comment"></i> {{localize "PRQ.App.Post"}}
+        </button>
+    </div>
+</div>

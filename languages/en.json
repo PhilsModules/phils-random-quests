@@ -1,0 +1,18 @@
+{
+    "PRQ.App.Title": "Phil's Quest Generator",
+    "PRQ.App.RerollOne": "Reroll Entry",
+    "PRQ.App.RerollAll": "Reroll All",
+    "PRQ.App.Post": "Post to Chat",
+    "PRQ.App.UpdateContent": "Update/Reload Lists",
+    "PRQ.App.InfoUpdated": "Content successfully updated from source files.",
+    "PRQ.App.IncludeInChat": "Include in Chat Post",
+    "PRQ.App.NoSelection": "No items selected to post.",
+    "PRQ.Chat.Title": "New Quest",
+    "PRQ.Label.Quest_Giver": "Quest Giver",
+    "PRQ.Label.Quest_Fantasy_Giver": "High Fantasy Giver",
+    "PRQ.Label.Quest_Task": "Task",
+    "PRQ.Label.Quest_Reason": "Reason",
+    "PRQ.Label.Quest_Incident": "Incident",
+    "PRQ.Label.Quest_Deadline": "Deadline",
+    "PRQ.Label.Quest_Location": "Location"
+}

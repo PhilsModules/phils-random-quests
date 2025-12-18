@@ -1,0 +1,18 @@
+{
+    "PRQ.App.Title": "Phil's Quest Generator",
+    "PRQ.App.RerollOne": "Eintrag neu würfeln",
+    "PRQ.App.RerollAll": "Alles neu würfeln",
+    "PRQ.App.Post": "In den Chat posten",
+    "PRQ.App.UpdateContent": "Listen aktualisieren",
+    "PRQ.App.InfoUpdated": "Listen erfolgreich aus den Quelldateien aktualisiert.",
+    "PRQ.App.IncludeInChat": "Im Chat anzeigen",
+    "PRQ.App.NoSelection": "Keine Einträge zum Posten ausgewählt.",
+    "PRQ.Chat.Title": "Neues Abenteuer",
+    "PRQ.Label.Quest_Giver": "Auftraggeber",
+    "PRQ.Label.Quest_Fantasy_Giver": "High Fantasy Auftraggeber",
+    "PRQ.Label.Quest_Task": "Aufgabe",
+    "PRQ.Label.Quest_Reason": "Grund / Motivation",
+    "PRQ.Label.Quest_Incident": "Hintergrund / Auslöser",
+    "PRQ.Label.Quest_Deadline": "Zeitlimit",
+    "PRQ.Label.Quest_Location": "Ort"
+}
