@@ -5,7 +5,7 @@
 ![Foundry v13 Compatible](https://img.shields.io/badge/Foundry-v13-brightgreen)
 ![Foundry v12 Compatible](https://img.shields.io/badge/Foundry-v12-green)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
-![Version](https://img.shields.io/badge/Version-1.1.0-orange)
+![Version](https://img.shields.io/badge/Version-1.3.0-orange)
 
 
 <a href="Updates.md"><img src="https://img.shields.io/badge/CHECK-Changelog-blue" style="height: 25px;"></a>
@@ -21,7 +21,7 @@
 
 <br>
 
-<img src="https://github.com/PhilsModules/phils-random-quests/blob/main/covers.png" alt="Preview" width="400">
+<img src="https://github.com/PhilsModules/phils-random-quests/blob/main/cover.png" alt="Preview" width="400">
 
 </div>
 
@@ -39,18 +39,33 @@
 
 </div>
 
-## 📊 Inhalts-Statistik
+## 🔮 Infinite Possibilities
 
-Mit über **1.800 einzigartigen Texteinträgen** kann das Modul **Billiarden** von einzigartigen Quest-Kombinationen generieren!
+With the new atomic generation engine, the possibilities are nearly endless.
+**Theoretical Combinations:**
+`(300 Givers x 400 Tasks x 300 Reasons x 300 Locations x 300 Incidents) = > 30 Quadrillion Variations`
 
-| Kategorie | Einträge |
-| :--- | :---: |
-| **Auftraggeber** | 300+ |
-| **Aufgaben** | 300+ |
-| **Gründe** | 300+ |
-| **Orte** | 300+ |
-| **Fristen (Deadlines)** | 300+ |
-| **Vorfälle (Incidents)** | 300+ |
+Even without the math, you will likely **never see the same quest twice**.
+
+## 📊 Content Statistics (Version 1.2.0)
+
+We have handcrafted over **2,500** unique text entries across 5 major themes:
+
+| Theme | Templates | Items | Locations | Total Entities |
+| :--- | :---: | :---: | :---: | :---: |
+| **Fantasy (Core)** | **433** | 250+ | 300+ | **~1,400** |
+| **Space Opera** | **56** | 50+ | 50+ | **~250** |
+| **Pirate** | **56** | 50+ | 50+ | **~250** |
+| **Wild West** | **50** | 50+ | 50+ | **~200** |
+| **Cyberpunk** | **65** | 50+ | 50+ | **~250** |
+| **Total** | **660+** | **500+** | **550+** | **2,500+** |
+
+Detailed contents include:
+*   **Fantasy**: Social Intrigue, Morally Grey, Mysteries, High Magic.
+*   **Space**: Alien artifacts, AI glitches, warp drive sabotage.
+*   **Pirate**: Buried treasure, cursed ships, mutinies.
+*   **Western**: Train robberies, gold rushes, bounty hunting.
+*   **Cyberpunk**: Corporate espionage, hacking, neon-noir investigations.
 
 ---
 
@@ -98,18 +113,19 @@ Erstelle komplexe Quest-Prompts aus 7 Kategorien:
 
 </div>
 
+## 🔮 Infinite Possibilities
+
+**Theoretical Combinations:** `> 30 Quadrillion Variations`
+
 ## 📊 Content Statistics
 
-With over **1,800 unique text entries**, the module can generate **over 1 Quadrillion** unique quest combinations!
-
-| Category | Entities |
-| :--- | :---: |
-| **Quest Givers** | 300+ |
-| **Tasks** | 300+ |
-| **Reasons** | 300+ |
-| **Locations** | 300+ |
-| **Deadlines** | 300+ |
-| **Incidents** | 300+ |
+| Theme | Templates | Total Entities |
+| :--- | :---: | :---: |
+| **Fantasy** | 433 | ~1,400 |
+| **Space** | 56 | ~250 |
+| **Pirate** | 56 | ~250 |
+| **Western** | 50 | ~200 |
+| **Cyberpunk** | 65 | ~250 |
 
 ---
 
@@ -149,7 +165,6 @@ Create complex quest prompts from 7 categories:
     </a>
     <p>Made with ❤️ for the Foundry VTT Community</p>
 </div>
-
 
 
 

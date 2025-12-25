@@ -14,5 +14,11 @@
     "PRQ.Label.Quest_Reason": "Reason",
     "PRQ.Label.Quest_Incident": "Incident",
     "PRQ.Label.Quest_Deadline": "Deadline",
-    "PRQ.Label.Quest_Location": "Location"
+    "PRQ.Label.Quest_Location": "Location",
+    "PRQ.App.GenreLabel": "Genre / Theme",
+    "PRQ.Genre.Fantasy": "Fantasy (Classic)",
+    "PRQ.Genre.Pirate": "Pirate",
+    "PRQ.Genre.Space": "Sci-Fi / Space",
+    "PRQ.Genre.Western": "Western",
+    "PRQ.Genre.Cyberpunk": "Cyberpunk"
 }

@@ -1,7 +1,7 @@
 {
     "id": "phils-random-quests",
     "title": "Phil's Random Quests",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "compatibility": {
         "minimum": "12",
         "verified": "13"
@@ -12,10 +12,19 @@
         }
     ],
     "esmodules": [
+        "scripts/data_de_fantasy.js",
+        "scripts/data_de_pirate.js",
+        "scripts/data_de_space.js",
+        "scripts/data_de_western.js",
+        "scripts/data_de_cyberpunk.js",
+        "scripts/data_en_fantasy.js",
+        "scripts/data_en_pirate.js",
+        "scripts/data_en_space.js",
+        "scripts/data_en_western.js",
+        "scripts/data_en_cyberpunk.js",
+        "scripts/rewards_data.js",
+        "scripts/api.js",
         "scripts/main.js"
-    ],
-    "styles": [
-        "styles/quest.css"
     ],
     "languages": [
         {

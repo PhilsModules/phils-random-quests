@@ -4,6 +4,26 @@ import { QuestGeneratorApp } from "./app.js";
 Hooks.once("init", () => {
     console.log("Phils Random Quests | Initializing");
 
+    // Register Genre Setting
+    game.settings.register("phils-random-quests", "genre", {
+        name: "PRQ.Settings.Genre.Name",
+        hint: "PRQ.Settings.Genre.Hint",
+        scope: "world",
+        config: true,
+        type: String,
+        choices: {
+            "fantasy": "PRQ.Genre.Fantasy",
+            "pirate": "PRQ.Genre.Pirate",
+            "space": "PRQ.Genre.Space",
+            "western": "PRQ.Genre.Western",
+            "cyberpunk": "PRQ.Genre.Cyberpunk"
+        },
+        default: "fantasy",
+        onChange: value => {
+            console.log(`Phils Random Quests | Genre changed to ${value}`);
+        }
+    });
+
     // Expose API for Macro use
     game.modules.get("phils-random-quests").api = {
         QuestGeneratorApp,
