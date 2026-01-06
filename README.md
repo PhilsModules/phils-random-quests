@@ -61,8 +61,8 @@ Wir haben über **2.500** einzigartige Texteinträge in 5 Haupt-Themen handgefer
 2.  Gehe zum Reiter **Add-on Modules**.
 3.  Klicke auf **Install Module**.
 4.  Füge die folgende **Manifest URL** unten ein:
-    ```text
-   https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json
+    ```
+    https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json
     ```
 5.  Klicke auf **Install**.
 
@@ -108,8 +108,8 @@ We have handcrafted over **2,500** unique text entries across 5 major themes:
 2.  Go to the **Add-on Modules** tab.
 3.  Click **Install Module**.
 4.  Paste the following **Manifest URL** into the field:
-    ```text
-   https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json
+    ```
+    https://github.com/PhilsModules/phils-random-quests/releases/latest/download/module.json
     ```
 5.  Click **Install**.
 
@@ -129,3 +129,4 @@ We have handcrafted over **2,500** unique text entries across 5 major themes:
     <br><br>
     <p><i>Made with ❤️ for the Foundry VTT Community</i></p>
 </div>
+
