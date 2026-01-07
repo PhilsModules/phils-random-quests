@@ -20,7 +20,7 @@ _Ein einfaches Modul für sofortige Abenteuer-Ideen._
 <br>
 
 <div align="center">
-<img src="https://github.com/PhilsModules/phils-random-quests/blob/main/cover.png" alt="Preview" width="400">
+<img src="https://github.com/PhilsModules/phils-random-quests/blob/main/covers.png" alt="Preview" width="400">
 </div>
 
 <br>
@@ -219,3 +219,4 @@ See `LICENSE` file for details.
     <br><br>
     <p><i>Made with ❤️ for the Foundry VTT Community</i></p>
 </div>
+
