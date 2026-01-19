@@ -10,7 +10,8 @@ import { QUEST_DATA_SPACE_EN } from "./data_en_space.js";
 import { QUEST_DATA_WESTERN_EN } from "./data_en_western.js";
 import { QUEST_DATA_CYBERPUNK_EN } from "./data_en_cyberpunk.js";
 
-import { REWARDS_DATA } from "./rewards_data.js";
+import { REWARDS_DATA as REWARDS_DATA_DE } from './rewards_data.js';
+import { REWARDS_DATA as REWARDS_DATA_EN } from './rewards_data_en.js';
 
 export class RandomQuestAPI {
 
@@ -238,26 +239,29 @@ export class RandomQuestAPI {
 
 
 
-        let rewardPool = REWARDS_DATA[`rewards_fantasy_tier${tier}`]; // Default
+        // Select Rewards Data based on language
+        const REWARDS = (game.i18n.lang === "de") ? REWARDS_DATA_DE : REWARDS_DATA_EN;
+
+        let rewardPool = REWARDS[`rewards_fantasy_tier${tier}`]; // Default
 
         if (genre === "space" || genre === "cyberpunk") {
-            rewardPool = REWARDS_DATA[`rewards_space_tier${tier}`];
+            rewardPool = REWARDS[`rewards_space_tier${tier}`];
         }
 
         // Fallback if specific tier/genre combo missing
-        if (!rewardPool) rewardPool = REWARDS_DATA[`rewards_fantasy_tier${tier}`];
+        if (!rewardPool) rewardPool = REWARDS[`rewards_fantasy_tier${tier}`];
 
-        let rewardTextRaw = this.getRandomItem(rewardPool || REWARDS_DATA.rewards_fantasy_tier1);
+        let rewardTextRaw = this.getRandomItem(rewardPool || REWARDS.rewards_fantasy_tier1);
         const rewardText = (typeof rewardTextRaw === 'object' && rewardTextRaw.text) ? rewardTextRaw.text : rewardTextRaw;
 
-        let twistTextRaw = this.getRandomItem(REWARDS_DATA.twists);
+        let twistTextRaw = this.getRandomItem(REWARDS.twists);
         const twistText = (typeof twistTextRaw === 'object' && twistTextRaw.text) ? twistTextRaw.text : twistTextRaw;
 
         // Add difficulty label locally
         const tierLabels = {
-            1: "I (Simpel)",
-            2: "II (Erfahren)",
-            3: "III (Heroisch)"
+            1: game.i18n.localize("PRQ.Tier.Simple"),
+            2: game.i18n.localize("PRQ.Tier.Experienced"),
+            3: game.i18n.localize("PRQ.Tier.Heroic")
         };
 
 
@@ -272,9 +276,9 @@ export class RandomQuestAPI {
             { source: "Quest_Deadline", text: deadline.text, label: game.i18n.localize("PRQ.Label.Quest_Deadline"), isSelected: true, ...deadline },
 
             // Visible GM Secrets
-            { source: "Quest_Tier", text: tierLabels[tier], label: "Schwierigkeit (GM)", isSelected: true },
-            { source: "Quest_Reward", text: rewardText, label: "Belohnung (GM)", isSelected: true },
-            { source: "Quest_Twist", text: twistText, label: "Twist (GM)", isSelected: true }
+            { source: "Quest_Tier", text: tierLabels[tier], label: game.i18n.localize("PRQ.Label.Difficulty"), isSelected: true },
+            { source: "Quest_Reward", text: rewardText, label: game.i18n.localize("PRQ.Label.Reward"), isSelected: true },
+            { source: "Quest_Twist", text: twistText, label: game.i18n.localize("PRQ.Label.Twist"), isSelected: true }
         ];
     }
 
@@ -297,15 +301,15 @@ export class RandomQuestAPI {
             else if (roll > 0.6) tier = 2;
 
             const tierLabels = {
-                1: "I (Simpel)",
-                2: "II (Erfahren)",
-                3: "III (Heroisch)"
+                1: game.i18n.localize("PRQ.Tier.Simple"),
+                2: game.i18n.localize("PRQ.Tier.Experienced"),
+                3: game.i18n.localize("PRQ.Tier.Heroic")
             };
 
             return {
                 source: "Quest_Tier",
                 text: tierLabels[tier],
-                label: "Schwierigkeit (GM)"
+                label: game.i18n.localize("PRQ.Label.Difficulty")
             };
         }
 
@@ -358,9 +362,9 @@ export class RandomQuestAPI {
         const itemText = (typeof itemRaw === 'object' && itemRaw.text) ? itemRaw.text : itemRaw;
 
         // Manual Label Override for Rewards
-        let label = game.i18n.localize(`PRQ.Label.${sourceIdentifier}`);
-        if (sourceIdentifier === "Quest_Reward") label = "Belohnung (GM)";
-        if (sourceIdentifier === "Quest_Twist") label = "Twist (GM)";
+            let label = game.i18n.localize(`PRQ.Label.${sourceIdentifier}`);
+        if (sourceIdentifier === "Quest_Reward") label = game.i18n.localize("PRQ.Label.Reward");
+        if (sourceIdentifier === "Quest_Twist") label = game.i18n.localize("PRQ.Label.Twist");
 
         return {
             source: sourceIdentifier,
@@ -584,9 +588,9 @@ export class RandomQuestAPI {
             let secretContent = `<div lang="${game.i18n.lang}">
                 <h4><i class="fas fa-user-secret"></i> GM Secrets</h4>
                 <p>
-                    <b>Schwierigkeit:</b> Tier ${tierText}<br>
-                    ${rewardText ? `<b>Belohnung:</b> ${this.capitalize(rewardText)}<br>` : ''}
-                    ${twistText ? `<b>Twist:</b> ${twistText}` : ''}
+                    <b>${game.i18n.localize("PRQ.Chat.Difficulty")}</b> Tier ${tierText}<br>
+                    ${rewardText ? `<b>${game.i18n.localize("PRQ.Chat.Reward")}</b> ${this.capitalize(rewardText)}<br>` : ''}
+                    ${twistText ? `<b>${game.i18n.localize("PRQ.Chat.Twist")}</b> ${twistText}` : ''}
                 </p>
             </div>`;
 

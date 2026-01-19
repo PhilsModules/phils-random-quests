@@ -20,5 +20,14 @@
     "PRQ.Genre.Pirate": "Pirate",
     "PRQ.Genre.Space": "Sci-Fi / Space",
     "PRQ.Genre.Western": "Western",
-    "PRQ.Genre.Cyberpunk": "Cyberpunk"
+    "PRQ.Genre.Cyberpunk": "Cyberpunk",
+    "PRQ.Label.Difficulty": "Difficulty (GM)",
+    "PRQ.Label.Reward": "Reward (GM)",
+    "PRQ.Label.Twist": "Twist (GM)",
+    "PRQ.Chat.Difficulty": "Difficulty:",
+    "PRQ.Chat.Reward": "Reward:",
+    "PRQ.Chat.Twist": "Twist:",
+    "PRQ.Tier.Simple": "I (Simple)",
+    "PRQ.Tier.Experienced": "II (Experienced)",
+    "PRQ.Tier.Heroic": "III (Heroic)"
 }
